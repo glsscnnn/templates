@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+
+\usepackage[backend=biber]{biblatex}
+\usepackage[letterpaper]{geometry}
+\usepackage{times}
+\usepackage{rotating}
+\usepackage{setspace}
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+\doublespacing
+\addbibresource{ref.bib}
+\usepackage{fancyhdr}
+\lhead{}
+\chead{}
+\rhead{LastName \thepage}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\setlength\headsep{0.333in}
+
+\begin{document}
+\begin{flushleft}
+Name\\
+Professor\\
+Institute\\
+\today\\
+\end{flushleft}
+
+\begin{center}
+Title
+\end{center}
+\setlength{\parindent}{0.5in}
+content...
+\printbibliography
+\end{document}
